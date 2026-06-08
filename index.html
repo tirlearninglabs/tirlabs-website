@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="TIR Learning Labs develops preparedness intelligence systems that help students understand readiness before performance reveals uncertainty.">
+    <meta name="keywords"
+        content="Preparedness Intelligence, Learning Readiness, Educational AI, TIR Learning Labs, Student Readiness">
+    <meta name="author" content="TIR Learning Labs">
+
+    <meta property="og:title" content="TIR Learning Labs | Tailored Intelligence for Readiness">
+    <meta property="og:description" content="Preparedness should not remain invisible.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tirlabs.in">
+    <meta property="og:image" content="https://tirlabs.in/assets/logo/TIR_Tag_Master.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TIR Learning Labs">
+    <meta name="twitter:description" content="Preparedness should not remain invisible.">
+    <meta name="twitter:image" content="https://tirlabs.in/assets/logo/TIR_Tag_Master.png">
+
+    <link rel="canonical" href="https://tirlabs.in">
+    <link rel="manifest" href="assets/logo/favicon_io/site.webmanifest">
+
+    <title>TIR — Tailored Intelligence for Readiness</title>
+    <link rel="icon" href="assets/logo/favicon_io/favicon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Inter:wght@100;200;300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #020408;
+            --bg-void: #050a16;
+            --bg-vignette: #010204;
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+            --text-deep: #475569;
+            --cyan-glow: rgba(14, 165, 233, 0.03);
+            --cyan-edge: #0ea5e9;
+            --font-serif: 'Playfair Display', 'Cinzel', serif;
+            --font-sans: 'Inter', sans-serif;
+            --space-unit: clamp(4rem, 8vw, 10rem);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background-color: var(--bg-dark);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-bright);
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        /* ATMOSPHERIC LIFE LAYER: Moonlit Intelligent Technology Grid */
+        .environmental-matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+            background:
+                radial-gradient(circle at 50% 30%, rgba(14, 165, 233, 0.04) 0%, transparent 60%),
+                radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 10% 80%, rgba(15, 23, 42, 0.8) 0%, transparent 70%),
+                linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-void) 40%, var(--bg-vignette) 100%);
+        }
+
+        /* Subtle Electric-Blue Luminous Diffusion Traces */
+        .luminous-trace {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.02) 0%, transparent 70%);
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            mix-blend-mode: plus-lighter;
+            pointer-events: none;
+            animation: atmosphericPulse 12s ease-in-out infinite alternate;
+        }
+
+        @keyframes atmosphericPulse {
+            0% {
+                opacity: 0.6;
+                transform: translateX(-50%) scale(1);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(-48%) scale(1.1);
+            }
+        }
+
+        /* COHESIVE BRANDING & ENVIRONMENTALLY AWARE NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2.5rem clamp(2rem, 6vw, 6rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            transition: padding 0.8s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.8s ease, backdrop-filter 0.8s ease;
+        }
+
+        body.scrolled header {
+            padding: 1.8rem clamp(2rem, 6vw, 6rem);
+            background-color: rgba(2, 4, 8, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .brand-signature {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            letter-spacing: 0.4em;
+            text-decoration: none;
+            color: var(--text-bright);
+            font-weight: 400;
+            opacity: 0.85;
+        }
+
+        .nav-links-editorial {
+            display: flex;
+            gap: 3.2rem;
+            list-style: none;
+        }
+
+        .nav-links-editorial a {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-weight: 400;
+            opacity: 0.4;
+            position: relative;
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav-links-editorial a:hover {
+            opacity: 0.85;
+            color: var(--text-bright);
+        }
+
+        /* ACTIVE NAVIGATION STATE: Soft blue environmental illumination */
+        .nav-links-editorial a.active {
+            opacity: 1;
+            color: var(--text-bright);
+            text-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links-editorial {
+                display: none;
+            }
+        }
+
+        /* NARRATIVE STRUCTURAL CONTAINER */
+        .narrative-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 clamp(2rem, 6vw, 5rem);
+        }
+
+        /* VISUAL RHYTHM GENERATOR: Alternating Density and Breathing Spaces */
+        .story-block {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding: var(--space-unit) 0;
+        }
+
+        /* Intimate, concentrated breathing spaces */
+        .story-block.intimate-space {
+            min-height: 80vh;
+            background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.015) 0%, transparent 60%);
+        }
+
+        /* Expansive, wide landscape spaces */
+        .story-block.expansive-space {
+            min-height: 120vh;
+        }
+
+        /* SECTION LABELS & SYSTEM HEADINGS */
+        .editorial-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            color: var(--text-deep);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            display: block;
+            transition: color 1s ease;
+        }
+
+        .story-block.active .editorial-label {
+            color: var(--cyan-edge);
+        }
+
+        .poetic-heading {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 4.5vw, 3.4rem);
+            font-weight: 400;
+            line-height: 1.35;
+            letter-spacing: -0.01em;
+            color: var(--text-bright);
+            max-width: 850px;
+        }
+
+        /* HERO BLOCK FRAME */
+        .hero-block-frame {
+            align-items: center;
+            text-align: center;
+            padding-top: 8rem;
+        }
+
+        .hero-caption {
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            font-weight: 200;
+            color: var(--text-dim);
+            max-width: 540px;
+            margin: 2.5rem auto 4rem auto;
+            line-height: 1.9;
+        }
+
+        /* Voice Ambience Waves */
+        .voice-ambience-wave {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 300px;
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .wave-node {
+            width: 1px;
+            height: 6px;
+            background: linear-gradient(to top, transparent, var(--cyan-edge), transparent);
+            animation: rawVibration 2.5s ease-in-out infinite alternate;
+            opacity: 0.25;
+        }
+
+        .wave-node:nth-child(2n) {
+            animation-delay: 0.3s;
+            animation-duration: 3.2s;
+        }
+
+        .wave-node:nth-child(3n) {
+            animation-delay: 0.7s;
+            animation-duration: 2.1s;
+        }
+
+        .wave-node:nth-child(4n) {
+            animation-delay: 1.1s;
+            animation-duration: 4s;
+        }
+
+        @keyframes rawVibration {
+            0% {
+                transform: scaleY(1);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: scaleY(6);
+                opacity: 0.5;
+            }
+        }
+
+        /* FADE ENGINE FOR SCROLLING ELEMENTS */
+        .fade-in-scroller {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 2s cubic-bezier(0.16, 1, 0.3, 1), transform 2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in-scroller.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* THE CHRONICLE / EDITORIAL PROSE LAYOUTS */
+        .cinematic-editorial-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .cinematic-editorial-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .editorial-prose {
+            font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+
+        .editorial-prose p {
+            margin-bottom: 2.5rem;
+        }
+
+        /* UNIFIED VISUAL WORLD: Dark, Still Midnight Vignettes */
+        .environment-vignette {
+            width: 100%;
+            aspect-ratio: 10/11;
+            background: linear-gradient(135deg, rgba(5, 10, 22, 0.38), rgba(5, 10, 22, 0.42)),
+                url('assets/images/tir-night-before-exam.webp') center/cover no-repeat;
+            border-radius: 2px;
+            box-shadow:
+                0 0 40px rgba(0, 140, 255, 0.08),
+                0 25px 60px rgba(0, 0, 0, 0.4),
+                inset 0 0 35px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            position: relative;
+            filter: contrast(105%) brightness(1.02);
+        }
+
+        .environment-vignette.interaction-image {
+            background: linear-gradient(135deg, rgba(5, 10, 22, 0.4), rgba(5, 10, 22, 0.45)),
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+        }
+
+        .vignette-light-bleed {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.04) 0%, transparent 75%);
+            top: 10%;
+            right: 10%;
+            pointer-events: none;
+        }
+
+        /* POETIC INTERSTITAL MANIFESTO */
+        .manifesto-statement {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            line-height: 1.5;
+            font-weight: 400;
+            max-width: 1000px;
+            color: var(--text-bright);
+        }
+
+        .manifesto-statement span {
+            color: var(--text-deep);
+            transition: color 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .story-block.active .manifesto-statement span {
+            color: rgba(14, 165, 233, 0.6);
+            text-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
+        }
+
+        /* DIALOGUE & LIVE INTERACTION MATRIX */
+        .interactive-narrative-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        @media (max-width: 968px) {
+            .interactive-narrative-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+        }
+
+        .timeline-dialogue-space {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .live-dialogue-row {
+            max-width: 85%;
+            font-size: 1.05rem;
+            font-weight: 300;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s ease, transform 1.5s ease;
+        }
+
+        .live-dialogue-row.shown {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .live-dialogue-row.student {
+            align-self: flex-end;
+            text-align: right;
+            color: var(--text-bright);
+        }
+
+        .live-dialogue-row.tir {
+            align-self: flex-start;
+            text-align: left;
+            color: var(--text-dim);
+            border-left: 1px solid rgba(14, 165, 233, 0.15);
+            padding-left: 1.5rem;
+        }
+
+        .atmospheric-synthesis-card {
+            background: linear-gradient(180deg, rgba(7, 13, 28, 0.4) 0%, rgba(3, 6, 12, 0.2) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            padding: 3rem 2.5rem;
+            border-radius: 4px;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            position: sticky;
+            top: 25vh;
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .synthesis-caption {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: var(--text-deep);
+            display: block;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            padding-bottom: 0.5rem;
+        }
+
+        .synthesis-block {
+            margin-bottom: 2rem;
+        }
+
+        .synthesis-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            color: var(--text-bright);
+            margin-bottom: 0.6rem;
+            font-weight: 500;
+        }
+
+        .synthesis-node-list {
+            list-style: none;
+        }
+
+        .synthesis-node-list li {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .synthesis-node-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 3px;
+            height: 3px;
+            background-color: var(--cyan-edge);
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+
+        /* THE COMPANION DEVICE IMMERSIVE REVEAL */
+        .lifestyle-landscape {
+            width: 100%;
+            height: 75vh;
+            background:
+                linear-gradient(0deg,
+                    rgba(2, 4, 10, 0.18) 0%,
+                    rgba(2, 4, 10, 0.08) 45%,
+                    rgba(2, 4, 10, 0.18) 100%),
+                url('assets/images/tir-learning-companion.webp') center center / cover no-repeat;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            filter: brightness(96%) contrast(105%);
+        }
+
+        .monolith-presence-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        /* The Device Archetype Silhouette */
+        .device-silhouette {
+            width: 80px;
+            height: 140px;
+            background: linear-gradient(180deg, #091124 0%, #020408 100%);
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 60px 120px rgba(0, 0, 0, 0.9);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Moonlit technology aura emission */
+        .device-luminous-resonance {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 65%);
+            z-index: 1;
+            animation: rhythmicPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+        }
+
+        @keyframes rhythmicPulse {
+            0% {
+                transform: scale(0.85);
+                opacity: 0.4;
+            }
+
+            100% {
+                transform: scale(1.15);
+                opacity: 0.9;
+            }
+        }
+
+        .landscape-annotation {
+            max-width: 720px;
+            text-align: center;
+            font-size: 1.08rem;
+            line-height: 1.9;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.92);
+            padding: 2.2rem 3rem;
+            z-index: 3;
+            position: relative;
+            background: rgba(2, 6, 18, 0.34);
+            backdrop-filter: blur(6px);
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28);
+            text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+        }
+
+        /* EDITORIAL MANIFESTO SYSTEM GRID */
+        .editorial-matrix {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem 4rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .editorial-matrix {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .matrix-column {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .matrix-header {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            color: var(--text-bright);
+            margin-bottom: 1.2rem;
+            font-weight: 400;
+        }
+
+        .matrix-body {
+            font-size: 0.95rem;
+            color: var(--text-dim);
+            font-weight: 300;
+        }
+
+        /* EXPANSIVE VISION ARCHITECTURE */
+        .vision-centerpiece {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vision-prose {
+            font-size: 1.15rem;
+            color: var(--text-dim);
+            font-weight: 200;
+            line-height: 1.9;
+        }
+
+        /* THE EPIC CLOSURE FRAME */
+        .epic-closure {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+
+        .closure-statement-block {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .closure-headline {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .closure-subtext {
+            font-size: 1.15rem;
+            color: var(--text-dim);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 200;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.02);
+            padding-top: 3rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            color: var(--text-deep);
+        }
+
+        footer a {
+            color: var(--text-dim);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--cyan-edge);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Atmospheric Energy Layer -->
+    <div class="environmental-matrix">
+        <div class="luminous-trace"></div>
+    </div>
+
+    <!-- Environmentally Aware Fixed Top Header -->
+    <header id="global-header">
+        <a href="#" class="brand-signature">
+            <svg width="52" height="auto" viewBox="0 0 264.58333 264.58333" version="1.1" id="svg1"
+                inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)" sodipodi:docname="TIR_Symbol_White.svg"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
+                    inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0"
+                    inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" showgrid="true" inkscape:zoom="0.25"
+                    inkscape:cx="-102" inkscape:cy="630" inkscape:window-width="1920" inkscape:window-height="1009"
+                    inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"
+                    inkscape:current-layer="g6">
+                    <inkscape:grid id="grid1" units="mm" originx="0" originy="0" spacingx="0.99999999"
+                        spacingy="0.99999999" empcolor="#0099e5" empopacity="0.30196078" color="#0099e5"
+                        opacity="0.14901961" empspacing="5" enabled="true" visible="true" />
+                </sodipodi:namedview>
+                <defs id="defs1" />
+                <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+                    <g id="g6" inkscape:label="TIR-v1-logo">
+                        <path id="path1" style="fill:#ffffff;stroke-width:0.447641;fill-opacity:1" inkscape:label="ring"
+                            d="M 110.96377 4.2813924 A 130.48801 130.48753 0 0 0 1.633492 133.04253 A 130.48801 130.48753 0 0 0 110.96377 261.80366 L 110.96377 219.73749 A 88.579857 89.279282 0 0 1 43.542045 133.04253 A 88.579857 89.279282 0 0 1 110.96377 46.347559 L 110.96377 4.2813924 z M 153.61956 4.3377197 L 153.61956 46.432308 A 88.579857 89.279282 0 0 1 220.70177 133.04253 A 88.579857 89.279282 0 0 1 153.61956 219.65274 L 153.61956 261.74733 A 130.48801 130.48753 0 0 0 262.60981 133.04253 A 130.48801 130.48753 0 0 0 153.61956 4.3377197 z " />
+                        <circle style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.0994857" id="ellipse5"
+                            cx="132.29167" cy="130.01382" inkscape:label="inner-black-circle" r="29" />
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <ul class="nav-links-editorial">
+            <li><a href="#philosophy" class="nav-target">Philosophy</a></li>
+            <li><a href="#interaction" class="nav-target">Interaction</a></li>
+            <li><a href="#companion" class="nav-target">Companion</a></li>
+            <li><a href="#manifesto" class="nav-target">Manifesto</a></li>
+            <li><a href="#vision" class="nav-target">Vision</a></li>
+        </ul>
+    </header>
+
+    <main class="narrative-container">
+
+        <!-- SECTION 1: HERO OUTLINE -->
+        <section class="story-block hero-block-frame expansive-space">
+            <div class="fade-in-scroller">
+                <span class="editorial-label">Why TIR Exists?</span>
+                <h1 class="poetic-heading">Preparedness should not remain invisible.</h1>
+                <p class="hero-caption">TIR helps students understand how prepared they truly are — before exams,
+                    results, or pressure reveal it for them.</p>
+
+                <div class="voice-ambience-wave">
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                    <div class="wave-node"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: PHILOSOPHY -->
+        <section class="story-block intimate-space" id="philosophy">
+            <div class="cinematic-editorial-layout fade-in-scroller">
+                <div class="editorial-prose">
+                    <span class="editorial-label">Philosophy</span>
+                    <h2 class="poetic-heading" style="font-size: 2.2rem; margin-bottom: 2rem;">The Night Before the Exam
+                    </h2>
+                    <p>There’s a specific kind of uncertainty students feel before an exam.</p>
+                    <p>Chapters may be finished. Notes may be revised. But one question quietly remains: <em>“Am I
+                            actually prepared?”</em></p>
+                    <p>Most systems answer that question too late.</p>
+                    <p>TIR is designed to recognize uncertainty while learning is still happening — before performance
+                        is forced to reveal it.</p>
+                </div>
+                <div class="environment-vignette">
+                    <div class="vignette-light-bleed"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: POETIC INTERSTITIAL -->
+        <section class="story-block intimate-space">
+            <div class="fade-in-scroller">
+                <h2 class="manifesto-statement">
+                    What if understanding wasn’t discovered suddenly on an exam paper? What if students could recognize
+                    confusion, confidence, and <span>clarity</span> while learning was still happening?
+                </h2>
+            </div>
+        </section>
+
+        <!-- SECTION 4: INTERACTION -->
+        <section class="story-block expansive-space" id="interaction">
+            <span class="editorial-label" style="margin-bottom: 3rem;">Interaction</span>
+            <div class="interactive-narrative-grid">
+
+                <!-- Dialogue Space Loop Context -->
+                <div class="timeline-dialogue-space" id="dialogue-engine">
+                    <div class="live-dialogue-row student">
+                        Hey TIR, can you check my readiness for tomorrow’s maths exam?
+                    </div>
+                    <div class="live-dialogue-row tir">
+                        Sure. Which chapters are covered?
+                    </div>
+                    <div class="live-dialogue-row student">
+                        Vectors and 3D geometry.
+                    </div>
+                    <div class="live-dialogue-row tir">
+                        Okay. Let’s begin simple. If two vectors have a cross product of zero, what does that usually
+                        tell us?
+                    </div>
+                    <div class="live-dialogue-row student">
+                        …That they’re parallel?
+                    </div>
+                    <div class="live-dialogue-row tir">
+                        Good. You understood the concept after thinking through it — but there was a small hesitation.
+                        Let’s revisit vector visualization once more before the exam.
+                    </div>
+                </div>
+
+                <!-- Live Evaluation Card Matrix -->
+                <div class="atmospheric-synthesis-card fade-in-scroller">
+                    <span class="synthesis-caption">READINESS SUMMARY</span>
+
+                    <div class="synthesis-block">
+                        <div class="synthesis-label">STRENGTHS</div>
+                        <ul class="synthesis-node-list">
+                            <li>Comfortable with foundational vector concepts</li>
+                            <li>Recognizes parallel vector behavior</li>
+                        </ul>
+                    </div>
+
+                    <div class="synthesis-block">
+                        <div class="synthesis-label">UNCERTAIN AREAS</div>
+                        <ul class="synthesis-node-list">
+                            <li>Cross product confidence</li>
+                            <li>Visual interpretation speed</li>
+                        </ul>
+                    </div>
+                    <div class="synthesis-block">
+                        <div class="synthesis-label">AREAS TO REVISIT</div>
+                        <ul class="synthesis-node-list">
+                            <li>Vector visualization practice</li>
+                            <li>Cross product applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5: COMPANION -->
+        <section class="story-block expansive-space" id="companion">
+            <div class="fade-in-scroller">
+                <span class="editorial-label" style="text-align: center; margin-bottom: 3rem;">Companion</span>
+                <div class="lifestyle-landscape">
+
+                    <!-- Core Identity Focal Point: The Companion Monolith -->
+                    <div class="monolith-presence-container">
+                        <div class="device-silhouette"></div>
+                        <div class="device-luminous-resonance"></div>
+                    </div>
+
+                    <div class="landscape-annotation">
+                        TIR is designed to stay quietly present while learning happens. Not as a screen demanding
+                        attention — but as a calm companion that listens, understands, and helps students recognize
+                        uncertainty before it grows.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: MANIFESTO -->
+        <section class="story-block intimate-space" id="manifesto">
+            <div class="fade-in-scroller">
+                <span class="editorial-label">Manifesto</span>
+                <h2 class="poetic-heading">Principles Behind TIR</h2>
+
+                <div class="editorial-matrix">
+                    <div class="matrix-column">
+                        <h3 class="matrix-header">Calm Learning</h3>
+                        <p class="matrix-body">TIR avoids high-pressure interactions and constant stimulation. The
+                            environment is designed to support focus, reflection, and steady understanding.</p>
+                    </div>
+                    <div class="matrix-column">
+                        <h3 class="matrix-header">Understanding Through Conversation</h3>
+                        <p class="matrix-body">Instead of relying only on scores, TIR observes how students explain
+                            ideas, respond to uncertainty, and think through concepts naturally.</p>
+                    </div>
+                    <div class="matrix-column">
+                        <h3 class="matrix-header">Preparedness Before Performance</h3>
+                        <p class="matrix-body">TIR is designed to recognize confusion and hesitation while learning is
+                            still happening — before exams are forced to reveal them.</p>
+                    </div>
+                    <div class="matrix-column">
+                        <h3 class="matrix-header">Adaptive Guidance</h3>
+                        <p class="matrix-body">Every student thinks differently. TIR adjusts conversations gradually to
+                            help students strengthen weak areas without overwhelming them.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: VISION -->
+        <section class="story-block expansive-space" id="vision">
+            <div class="vision-centerpiece fade-in-scroller">
+                <span class="editorial-label">Vision</span>
+                <h2 class="poetic-heading" style="margin: 0 auto 2.5rem auto;">A Future of Continuous Readiness</h2>
+                <p class="vision-prose">
+                    TIR imagines a learning environment where preparedness is no longer discovered suddenly through
+                    exams alone.
+                    Instead, students continuously develop awareness of their understanding through calm conversation,
+                    reflection, and guided learning — long before uncertainty becomes performance failure.
+                </p>
+                <p class="vision-prose">Preparedness should be understood continuously — not discovered accidentally.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 8: EPIC CLOSURE FRAME -->
+        <!-- SECTION 8: EPIC CLOSURE FRAME -->
+        <section class="story-block epic-closure">
+            <div class="closure-statement-block fade-in-scroller">
+                <h2 class="closure-headline">Quietly Present.</h2>
+                <p class="closure-subtext" style="margin-bottom: 4rem;">Helping students understand their preparedness
+                    before performance reveals it.</p>
+
+                <!-- Silent Signature Reveal -->
+                <div style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                    <!-- <img src="assets/logo/TIR_Tag_Master.png" alt="TIR Signature" height="auto" width="126px" style="opacity: 0.35; filter: brightness(0.95);"> -->
+                    <p class="closure-subtext"
+                        style="font-size: 0.9rem; letter-spacing: 0.25em; color: var(--text-bright); font-weight: 300; text-transform: uppercase; opacity: 0.85;">
+                        Tailored Intelligence for Readiness
+                    </p>
+                </div>
+            </div>
+
+            <footer>
+                <div>TIR Learning Labs © 2026</div>
+                <div><a href="mailto:hello@tirlabs.in">hello@tirlabs.in</a></div>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- Advanced Spatial Tracker Architecture -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Core Observer Setup for Cinematic Transitions
+            const progressiveBlocks = document.querySelectorAll('.fade-in-scroller, .story-block');
+            const structuralObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            progressiveBlocks.forEach(block => structuralObserver.observe(block));
+
+            // Automated Nav Anchor Synchronizer Engine (Spatial Awareness Layer)
+            const structuralSections = document.querySelectorAll('section[id]');
+            const globalMenuAnchors = document.querySelectorAll('.nav-target');
+
+            const sectionTrackingConfig = {
+                root: null,
+                rootMargin: '-45% 0px -45% 0px',
+                threshold: 0
+            };
+
+            const spatialNavigationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const preciseId = entry.target.getAttribute('id');
+                        globalMenuAnchors.forEach(link => {
+                            if (link.getAttribute('href') === `#${preciseId}`) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, sectionTrackingConfig);
+
+            structuralSections.forEach(section => spatialNavigationObserver.observe(section));
+
+            // Reset navigation highlights gracefully if scrolled back above view thresholds
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 80) {
+                    document.body.classList.add('scrolled');
+                } else {
+                    document.body.classList.remove('scrolled');
+                    globalMenuAnchors.forEach(link => link.classList.remove('active'));
+                }
+            });
+
+            // Live Script Sequential Dialogue Visualizer
+            const scriptWorkspace = document.getElementById('dialogue-engine');
+            const dialogueRows = scriptWorkspace.querySelectorAll('.live-dialogue-row');
+
+            const interactiveTriggerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        executeDialogueStream();
+                        interactiveTriggerObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.4 });
+
+            interactiveTriggerObserver.observe(scriptWorkspace);
+
+            function executeDialogueStream() {
+                dialogueRows.forEach((row, timelineIndex) => {
+                    setTimeout(() => {
+                        row.classList.add('shown');
+                    }, timelineIndex * 1600);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
